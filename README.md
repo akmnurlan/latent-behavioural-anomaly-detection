@@ -24,6 +24,30 @@ See `data/README.md` for download and preprocessing instructions.
 
 ---
 
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/akmnurlan/latent-behavioural-anomaly-detection.git
+cd latent-behavioural-anomaly-detection
+```
+
+Create a virtual environment (recommended):
+```bash
+python -m venv venv
+source venv/bin/activate        # macOS / Linux
+venv\Scripts\activate           # Windows
+```
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+Verify installation:
+```bash
+python -c "import torch, sklearn, xgboost; print('Environment ready')"
+```
+
 ## Models
 
 ### Baseline 1 – Supervised
@@ -72,27 +96,5 @@ See `data/README.md` for download and preprocessing instructions.
 - Latent change detection development
 - Technical report preparation
 
-## Installation
 
-Clone the repository:
-
-```bash
-git clone https://github.com/akmnurlan/latent-behavioural-anomaly-detection.git
-cd latent-behavioural-anomaly-detection
-```
-
-Create a virtual environment (recommended):
-```bash
-python -m venv venv
-source venv/bin/activate        # macOS / Linux
-venv\Scripts\activate           # Windows
-```
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-Verify installation:
-```bash
-python -c "import torch, sklearn, xgboost; print('Environment ready')"
-```
 ---
