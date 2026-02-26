@@ -48,6 +48,14 @@ Verify installation:
 python -c "import torch, sklearn, xgboost; print('Environment ready')"
 ```
 
+## Running Baseline Experiment
+
+Example: XGBoost baseline
+
+```bash
+python -m src.models.xgb --config configs/xgb.yaml
+```
+
 ## Models
 
 ### Baseline 1 – Supervised
