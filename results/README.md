@@ -2,8 +2,8 @@
 
 This directory stores:
 
-- figures/ → performance plots
-- tables/ → evaluation metrics
+- `figures/` → performance plots
+- `tables/` → evaluation metrics
 
 Planned figures:
 - F1 vs anomaly ratio
