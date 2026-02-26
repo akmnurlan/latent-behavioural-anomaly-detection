@@ -74,6 +74,10 @@ python -m src.models.changepoint --config configs/changepoint.yaml
 
 ![F1 vs Imbalance](results/figures/f1_vs_imbalance.png)
 
+![Precision/Recall vs imbalance](results/figures/precision_recall_vs_imbalance.png)
+
+![Confusion matrix at extreme ratio](results/figures/confusion_matrix_extreme_ratio.png)
+
 ## Models
 
 ### Baseline 1 – Supervised
