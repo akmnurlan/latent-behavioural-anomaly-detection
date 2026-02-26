@@ -2,6 +2,11 @@
 PhD preparation research project – Cybersecurity & Machine Learning 
 
 
+## Research Motivation
+
+Supervised intrusion detection models degrade significantly under extreme class imbalance and distribution drift. 
+This project investigates whether modelling behavioural regime transitions in latent space provides improved robustness and earlier detection compared to traditional per-flow classification.
+
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -55,6 +60,17 @@ Example: XGBoost baseline
 ```bash
 python -m src.models.xgb --config configs/xgb.yaml
 ```
+Autoencoder:
+```bash
+python -m src.models.autoencoder --config configs/autoencoder.yaml
+```
+Latent change detection:
+```bash
+python -m src.models.changepoint --config configs/changepoint.yaml
+```
+
+
+---
 
 ## Models
 
