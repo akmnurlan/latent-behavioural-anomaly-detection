@@ -91,25 +91,3 @@ Verify installation:
 python -c "import torch, sklearn, xgboost; print('Environment ready')"
 ```
 ---
-
-# 🎯 Why This Is Important
-
-This shows:
-
-- You understand reproducibility
-- You think like a researcher
-- You expect others to run your code
-- Your project is not just notebooks
-
-Professors notice this.
-
----
-
-# 🚀 Optional Upgrade (Very Good Signal)
-
-At the top of README, under title, add:
-
-
-![Python](https://img.shields.io/badge/python-3.10-blue)
-![Status](https://img.shields.io/badge/status-in%20progress-orange)
-![License](https://img.shields.io/badge/license-MIT-green)
