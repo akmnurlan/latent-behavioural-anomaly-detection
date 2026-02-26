@@ -68,6 +68,12 @@ Latent change detection:
 python -m src.models.changepoint --config configs/changepoint.yaml
 ```
 
+## Preliminary Baseline Result
+
+**XGBoost baseline:** F1 performance drops sharply as labelled anomalies become extremely rare in training data.
+
+![F1 vs Imbalance](results/figures/f1_vs_imbalance.png)
+
 ## Models
 
 ### Baseline 1 – Supervised
