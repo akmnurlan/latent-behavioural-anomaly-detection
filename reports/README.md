@@ -1,4 +1,4 @@
-```markdown
+
 # Technical Report
 
 This directory will contain:
