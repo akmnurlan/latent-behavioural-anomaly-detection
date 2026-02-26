@@ -18,7 +18,6 @@ This repository investigates intrusion detection under:
 
 The project formulates intrusion detection as behavioural regime change detection in latent space rather than per-flow classification.
 
----
 
 ## Dataset
 
@@ -27,7 +26,7 @@ CIC-IDS2017
 
 See `data/README.md` for download and preprocessing instructions.
 
----
+
 
 ## Installation
 
@@ -69,9 +68,6 @@ Latent change detection:
 python -m src.models.changepoint --config configs/changepoint.yaml
 ```
 
-
----
-
 ## Models
 
 ### Baseline 1 – Supervised
@@ -87,7 +83,7 @@ python -m src.models.changepoint --config configs/changepoint.yaml
 - Change-point detection (CUSUM / rolling window)
 - Detection delay evaluation
 
----
+
 
 ## Evaluation Metrics
 - Precision
@@ -96,14 +92,14 @@ python -m src.models.changepoint --config configs/changepoint.yaml
 - False Positive Rate (FPR)
 - Detection Delay
 
----
+
 
 ## Reproducibility
 - Configuration-driven experiments (`configs/`)
 - Fixed random seeds
 - Results exported to `results/`
 
----
+
 
 ## Repository Structure
 - `src/` core implementation
@@ -112,7 +108,7 @@ python -m src.models.changepoint --config configs/changepoint.yaml
 - `results/` figures and tables
 - `reports/` technical documentation
 
----
+
 
 ## Status (Feb–Apr 2026)
 - Data preprocessing
@@ -121,4 +117,3 @@ python -m src.models.changepoint --config configs/changepoint.yaml
 - Technical report preparation
 
 
----
