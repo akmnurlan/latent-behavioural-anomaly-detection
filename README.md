@@ -74,21 +74,22 @@ Clone the repository:
 ```bash
 git clone https://github.com/akmnurlan/latent-behavioural-anomaly-detection.git
 cd latent-behavioural-anomaly-detection
+```
 
 Create a virtual environment (recommended):
-
+```bash
 python -m venv venv
 source venv/bin/activate        # macOS / Linux
 venv\Scripts\activate           # Windows
-
+```
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
-
+```
 Verify installation:
-
+```bash
 python -c "import torch, sklearn, xgboost; print('Environment ready')"
-
+```
 ---
 
 # 🎯 Why This Is Important
@@ -108,7 +109,7 @@ Professors notice this.
 
 At the top of README, under title, add:
 
-```markdown
+
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
