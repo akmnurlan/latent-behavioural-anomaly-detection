@@ -1,1 +1,23 @@
-
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it."
+title: "Latent Behavioural Anomaly Detection"
+type: software
+authors:
+  - given-names: "Nurlan"
+    family-names: ""
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/akmnurlan/latent-behavioural-anomaly-detection"
+url: "https://github.com/akmnurlan/latent-behavioural-anomaly-detection"
+license: "MIT"
+keywords:
+  - anomaly detection
+  - intrusion detection
+  - concept drift
+  - change point detection
+  - imbalanced learning
+  - cybersecurity
+abstract: >
+  Semi-supervised intrusion detection framed as latent-space behavioural change detection
+  under extreme class imbalance and distribution shift.
+version: "0.1.0"
+date-released: "2026-02-27"
