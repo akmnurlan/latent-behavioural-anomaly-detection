@@ -1,6 +1,5 @@
 # Latent Behavioural Anomaly Detection
 PhD preparation research project – Cybersecurity & Machine Learning 
-# Latent Behavioural Regime Change Detection for Network Anomaly Detection Under Extreme Label Scarcity
 
 ## Research Motivation
 
