@@ -1,41 +1,68 @@
-# Latent Behavioural Anomaly Detection (PhD prep project)
+# Latent Behavioural Anomaly Detection
+PhD preparation research project – Cybersecurity & Machine Learning
 
-Research-oriented implementation of **semi-supervised intrusion/anomaly detection** under:
-- **extreme class imbalance** (e.g., <0.1% anomalies),
-- **behavioural drift / evolving attacks**, and
-- the need for **early detection** (detection delay).
+This repository investigates intrusion detection under:
+- Extreme class imbalance (<0.1% anomalies)
+- Behavioural drift
+- Early detection requirements
 
-The project models intrusion detection as **behavioural regime change detection** rather than only per-flow classification.
+The project formulates intrusion detection as behavioural regime change detection in latent space rather than per-flow classification.
 
-## Methods (planned + in progress)
-Baseline models:
-- **Supervised baseline:** XGBoost / tree-based classifier.
-- **Unsupervised baseline:** Autoencoder trained on normal traffic (reconstruction error).
+---
 
-Proposed method:
-- **Latent-space change detection:** learn embeddings on normal traffic and apply change detection
-  (e.g., CUSUM / BOCPD / rolling-window drift tests) to identify **behavioural regime transitions**.
+## Dataset
 
-## Datasets
-Planned evaluation on public intrusion datasets (choose one as primary):
-- CIC-IDS2017 (recommended for first results)
-- UNSW-NB15
+Primary dataset:
+CIC-IDS2017
 
-> Note: datasets are not committed to the repo. See `data/README.md` for download + preprocessing steps.
+See `data/README.md` for download and preprocessing instructions.
 
-## Metrics
-- Precision / Recall / F1
+---
+
+## Models
+
+### Baseline 1 – Supervised
+- XGBoost classifier
+- Performance evaluated under simulated imbalance (1%, 0.5%, 0.1%)
+
+### Baseline 2 – Unsupervised
+- Autoencoder trained on normal traffic only
+- Reconstruction error thresholding
+
+### Proposed Method
+- Latent representation learning
+- Change-point detection (CUSUM / rolling window)
+- Detection delay evaluation
+
+---
+
+## Evaluation Metrics
+- Precision
+- Recall
+- F1-score
 - False Positive Rate (FPR)
-- **Detection delay** (time/flows between attack onset and detection)
-- Robustness under simulated imbalance (1%, 0.5%, 0.1%)
+- Detection Delay
+
+---
 
 ## Reproducibility
+- Configuration-driven experiments (`configs/`)
 - Fixed random seeds
-- Configuration files in `configs/`
-- Results exported to `results/figures/` and `results/tables/`
+- Results exported to `results/`
 
-## Quick start
-```bash
-pip install -r requirements.txt
-python -m src.data.make_dataset --config configs/preprocess.yaml
-python -m src.experiments.run_all --config configs/experiment.yaml
+---
+
+## Repository Structure
+- `src/` core implementation
+- `configs/` experiment settings
+- `notebooks/` exploratory analysis
+- `results/` figures and tables
+- `reports/` technical documentation
+
+---
+
+## Status (Feb–Apr 2026)
+- Data preprocessing
+- Baseline model implementation
+- Latent change detection development
+- Technical report preparation
