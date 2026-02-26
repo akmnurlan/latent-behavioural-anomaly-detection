@@ -1,5 +1,7 @@
 # Latent Behavioural Anomaly Detection
-PhD preparation research project – Cybersecurity & Machine Learning
+PhD preparation research project – Cybersecurity & Machine Learning 
+
+
 ![Python](https://img.shields.io/badge/python-3.10-blue)
 ![Status](https://img.shields.io/badge/status-in%20progress-orange)
 ![License](https://img.shields.io/badge/license-MIT-green)
